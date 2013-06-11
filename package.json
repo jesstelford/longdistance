@@ -12,10 +12,10 @@
     "baseUrl": "./app",
 
     "dependencies": {
-      "backbone": "*",
-      "jquery": "*",
-      "lodash": "*",
-      "backbone.layoutmanager": "*"
+      "backbone": null,
+      "jquery": "<2",
+      "lodash": null,
+      "backbone.layoutmanager": null
     }
   }
 }
