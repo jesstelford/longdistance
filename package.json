@@ -1,21 +1,37 @@
 {
-  "name": "backbone-boilerplate",
-  "version": "0.1.0",
+	"name": "Longdistance",
+	"version": "0.1.0",
+	"description": "Manage Longdistance relationships with this web app. Friends, updates, shared calendars, and private notes between you and your loved ones."
+	"keywords": [
+		"longdistance",
+		"relationship",
+		"social",
+		"friends"
+	],
+	"bugs": {
+		"url": "http://github.com/jesstelford/longdistance/issues",
+		"email": "jess+longdistance@jes.st"
+	},
+	"repository": {
+		"type" : "git",
+		"url" : "http://github.com/jesstelford/longdistance.git"
+	},
 
-  "dependencies": {
-    "grunt": "~0.4",
-    "grunt-bbb-server": "0.1.0-alpha"
-  },
+	"dependencies": {
+		"grunt": "~0.4",
+		"grunt-bbb-server": "0.1.0-alpha"
+	},
 
-  "jam": {
-    "packageDir": "./vendor/jam",
-    "baseUrl": "./app",
+	"jam": {
+		"packageDir": "./vendor/jam",
+		"baseUrl": "./app",
 
-    "dependencies": {
-      "backbone": null,
-      "jquery": "<2",
-      "lodash": null,
-      "backbone.layoutmanager": null
-    }
-  }
+		"dependencies": {
+			"backbone": null,
+			"jquery": "<2",
+			"lodash": null,
+			"backbone.layoutmanager": null
+		}
+	},
+	"private": true
 }
