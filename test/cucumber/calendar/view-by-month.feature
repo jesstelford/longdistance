@@ -11,9 +11,9 @@ Feature: View a month by month calendar
 		Then I should see a calendar of this month
 		 And today should be highlighted
 
-	Scenario Outline: Change to next / prev month
+	Scenario Outline: Change to specific month
 		When I click "<month>"
-		Then I should see a calendar of <month>
+		Then I should see a calendar of "<month>"
 		 And no dates should be highlighted
 
 		Examples:	
@@ -24,4 +24,15 @@ Feature: View a month by month calendar
 	# Displayed like so:
 	#  2008 | 2009 | 2010 | 2011 | 2012 | 2013 | 2014 | 2015 | 2016 | 2017
 	# Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec
-	#	Scenario: Change to month
+
+	Scenario Outline: Change to next/prev month
+		Given I am viewing month "<start_date>"
+		 When I click "<change_button>"
+		 Then I should see a calendar of "<new_date>"
+
+		Examples:
+			| start_date    | change_button | new_date      |
+			| January 2014  | Next Month    | February 2014 |
+			| December 2014 | Next Month    | January 2015  |
+			| February 2014 | Prev Month    | January 2014  |
+			| January 2015  | Prev Month    | December 2014 |
