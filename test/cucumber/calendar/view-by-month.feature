@@ -17,9 +17,19 @@ Feature: View a month by month calendar
 		 And no dates should be highlighted
 
 		Examples:	
-			| month |
-			| next  |
-			| prev  |
+			| month     |
+			| January   |
+			| February  |
+			| March     |
+			| April     |
+			| May       |
+			| June      |
+			| July      |
+			| August    |
+			| September |
+			| October   |
+			| November  |
+			| December  |
 	
 	# Displayed like so:
 	#  2008 | 2009 | 2010 | 2011 | 2012 | 2013 | 2014 | 2015 | 2016 | 2017
