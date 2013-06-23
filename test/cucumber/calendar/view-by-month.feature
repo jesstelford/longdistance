@@ -1,7 +1,7 @@
 Feature: View a month by month calendar
-	To allow users to see future and past dates
+	To increase interaction with the calendar
 	As a Customer
-	I should be able to navigate a month by month calendar
+	I should be able to navigate month by month
 
 	Background:
 		Given I am logged in
