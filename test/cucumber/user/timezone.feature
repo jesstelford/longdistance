@@ -7,16 +7,16 @@ Feature: Setting a timezone
 		Given I am logged in
 		  And I am on the "My Account" page
 
-	Scenario Outline: Default Timezone
+	Scenario Outline: Location Aware Default Timezone
 		Given I am using a <location> IP
 		Then my timezone should be <timezone>
 
 		Examples: 
 			| location      | timezone |
-			| Sydney        | GMT+10   |
-			| San Francisco | GMT+0    |  
+			| Sydney        | GMT+1000 |
+			| San Francisco | GMT-8000 |  
 
 	Scenario: Default Timezone Unknown
 		Given I am using an unknown IP
-		Then my timezone should be GMT+0
+		Then my timezone should be GMT
 		And I should see the text "Set your timezone"
