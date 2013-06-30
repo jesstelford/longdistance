@@ -46,3 +46,17 @@ Feature: View a month by month calendar
 			| December 2014 | Next Month    | January 2015  |
 			| February 2014 | Prev Month    | January 2014  |
 			| January 2015  | Prev Month    | December 2014 |
+
+	Scenario Outline: Change to specific year
+		Given I am viewing any year
+		When I click "<year>"
+		Then I should see the month of "January" in "<year>"
+		 And no dates should be highlighted
+
+		Examples:	
+			| year |
+			| 2013 |
+			| 2014 |
+			| 2015 |
+			| 2016 |
+	
