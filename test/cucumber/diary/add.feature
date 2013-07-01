@@ -25,4 +25,3 @@ Feature: Adding a diary entry
 		 Then I should see the text appear below the textbox
 		  And the textbox should show the placeholder text "Write in your Diary..."
 		  And the button should be disabled
-
