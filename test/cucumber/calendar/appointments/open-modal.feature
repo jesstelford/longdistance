@@ -1,7 +1,7 @@
 Feature: Open modal to appointments to your calendar
-	To allow users to track their appointments
+	To allow users to view details of their appointments
 	As a Customer
-	I should be able to add appointments to my calendar
+	I should be able to open a modal showing the details
 
 	Background:
 		Given I am logged in
@@ -15,7 +15,7 @@ Feature: Open modal to appointments to your calendar
 		  And The date should be set as the date clicked
 
 	Scenario: Add at time
-		Given I am viewing an hour-by-hour calendar
+		Given I am viewing an day-by-day calendar
 		 When I click a time
 		  And there are no appointments on that time
 		 Then I should see the "add appointment" modal
@@ -23,7 +23,7 @@ Feature: Open modal to appointments to your calendar
 		  And The start time should be set as the time clicked
 
 	Scenario: Click and drag time
-		Given I am viewing an hour-by-hour calendar
+		Given I am viewing an day-by-day calendar
 		 When I click and drag from a start time to an end time
 		  And there are no appointments on that start time
 		 Then I should see the "add appointment" modal
