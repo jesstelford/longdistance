@@ -28,3 +28,7 @@ Feature: Show a list of diary entries
 		Given I have 7 entries
 		When I scroll to the last entry
 		Then I should see 7 entries
+
+	Scenario: No entries
+		Given I have 0 entries
+		Then I should see "You have no diary entries yet"
