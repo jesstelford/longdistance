@@ -7,10 +7,10 @@ Feature: Add a person
 		Given I am logged in
 		  And I am on the "People" page
 
-	Scenario: "Add People" poup
+	Scenario: "Add People" popup
 
 	Scenario: Filling out the people form
 
 	Scenario: Auto Suggesting people this could be
 
-	Scenario: 
+	Scenario: Required fields
