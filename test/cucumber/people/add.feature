@@ -14,3 +14,6 @@ Feature: Add a person
 	Scenario: Auto Suggesting people this could be
 
 	Scenario: Required fields
+
+	# Maybe a LinkedIn style suggest-a-friend feature
+	Scenario: Become their friend if matching person found
