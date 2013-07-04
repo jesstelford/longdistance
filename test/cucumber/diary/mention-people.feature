@@ -43,4 +43,4 @@ Feature: Mention people in a diary entry
 		Given I have entered "@Bill Paxton" into the textbox
 		  And I have saved the diary entry
 		 When I click "Bill Paxton"
-		 Then I am redirected to "Bill Paxton"s profile
+		 Then I am redirected to my "Bill Paxton" profile
