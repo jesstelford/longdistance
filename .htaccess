@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^$ /diary/ [L]
+RewriteRule ^who /people/ 
+RewriteRule ^what/?$ /photos/ 
+RewriteRule ^when/?$ /calendar/ 
+
+# Root URL is the diary
+# RewriteRule ^diary / [R]
