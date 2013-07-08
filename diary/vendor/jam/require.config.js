@@ -2,27 +2,27 @@ var jam = {
     "packages": [
         {
             "name": "backbone.layoutmanager",
-            "location": "..%2Fvendor%2Fjam/backbone.layoutmanager",
+            "location": "../vendor/jam/backbone.layoutmanager",
             "main": "backbone.layoutmanager.js"
         },
         {
             "name": "backbone",
-            "location": "..%2Fvendor%2Fjam/backbone",
+            "location": "../vendor/jam/backbone",
             "main": "backbone.js"
         },
         {
             "name": "lodash",
-            "location": "..%2Fvendor%2Fjam/lodash",
+            "location": "../vendor/jam/lodash",
             "main": "./dist/lodash.compat.js"
         },
         {
             "name": "jquery",
-            "location": "..%2Fvendor%2Fjam/jquery",
+            "location": "../vendor/jam/jquery",
             "main": "dist/jquery.js"
         },
         {
             "name": "underscore",
-            "location": "..%2Fvendor%2Fjam/underscore",
+            "location": "../vendor/jam/underscore",
             "main": "underscore.js"
         }
     ],
@@ -46,27 +46,27 @@ if (typeof require !== "undefined" && require.config) {
     "packages": [
         {
             "name": "backbone.layoutmanager",
-            "location": "..%2Fvendor%2Fjam/backbone.layoutmanager",
+            "location": "../vendor/jam/backbone.layoutmanager",
             "main": "backbone.layoutmanager.js"
         },
         {
             "name": "backbone",
-            "location": "..%2Fvendor%2Fjam/backbone",
+            "location": "../vendor/jam/backbone",
             "main": "backbone.js"
         },
         {
             "name": "lodash",
-            "location": "..%2Fvendor%2Fjam/lodash",
+            "location": "../vendor/jam/lodash",
             "main": "./dist/lodash.compat.js"
         },
         {
             "name": "jquery",
-            "location": "..%2Fvendor%2Fjam/jquery",
+            "location": "../vendor/jam/jquery",
             "main": "dist/jquery.js"
         },
         {
             "name": "underscore",
-            "location": "..%2Fvendor%2Fjam/underscore",
+            "location": "../vendor/jam/underscore",
             "main": "underscore.js"
         }
     ],
@@ -89,27 +89,27 @@ else {
     "packages": [
         {
             "name": "backbone.layoutmanager",
-            "location": "..%2Fvendor%2Fjam/backbone.layoutmanager",
+            "location": "../vendor/jam/backbone.layoutmanager",
             "main": "backbone.layoutmanager.js"
         },
         {
             "name": "backbone",
-            "location": "..%2Fvendor%2Fjam/backbone",
+            "location": "../vendor/jam/backbone",
             "main": "backbone.js"
         },
         {
             "name": "lodash",
-            "location": "..%2Fvendor%2Fjam/lodash",
+            "location": "../vendor/jam/lodash",
             "main": "./dist/lodash.compat.js"
         },
         {
             "name": "jquery",
-            "location": "..%2Fvendor%2Fjam/jquery",
+            "location": "../vendor/jam/jquery",
             "main": "dist/jquery.js"
         },
         {
             "name": "underscore",
-            "location": "..%2Fvendor%2Fjam/underscore",
+            "location": "../vendor/jam/underscore",
             "main": "underscore.js"
         }
     ],
