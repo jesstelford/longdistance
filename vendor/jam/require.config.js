@@ -11,6 +11,11 @@ var jam = {
             "main": "backbone.layoutmanager.js"
         },
         {
+            "name": "backbone.subroute",
+            "location": "../vendor/jam/backbone.subroute",
+            "main": "backbone.subroute.js"
+        },
+        {
             "name": "jquery",
             "location": "../vendor/jam/jquery",
             "main": "dist/jquery.js"
@@ -55,6 +60,11 @@ if (typeof require !== "undefined" && require.config) {
             "main": "backbone.layoutmanager.js"
         },
         {
+            "name": "backbone.subroute",
+            "location": "../vendor/jam/backbone.subroute",
+            "main": "backbone.subroute.js"
+        },
+        {
             "name": "jquery",
             "location": "../vendor/jam/jquery",
             "main": "dist/jquery.js"
@@ -96,6 +106,11 @@ else {
             "name": "backbone.layoutmanager",
             "location": "../vendor/jam/backbone.layoutmanager",
             "main": "backbone.layoutmanager.js"
+        },
+        {
+            "name": "backbone.subroute",
+            "location": "../vendor/jam/backbone.subroute",
+            "main": "backbone.subroute.js"
         },
         {
             "name": "jquery",
