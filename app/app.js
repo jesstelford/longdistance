@@ -11,7 +11,7 @@ function(LayoutManager) {
   // creation.
   var app = {
     // The root path to run the application.
-    root: "/diary/"
+    root: "/"
   };
 
   // Localize or create a new JavaScript Template object.
