@@ -4,9 +4,10 @@ define([
 
   // Include additional libraries installed with JamJS or placed in the
   // `vendor/js` directory, here.
+  "mustache"
 ],
 
-function(Backbone, LayoutManager) {
+function(Backbone, LayoutManager, Mustache) {
 
   // Provide a global location to place configuration settings and module
   // creation.
@@ -41,7 +42,7 @@ function(Backbone, LayoutManager) {
 
       // Seek out the template asynchronously.
       $.get(app.root + path, function(contents) {
-        done(_.template(contents));
+        done(JST[path] = Mustache.compile(contents));
       }, "text");
     }
   });

@@ -7,9 +7,10 @@ require.config({
 
   paths: {
     // Use the underscore build of Lo-Dash to minimize incompatibilities.
-    "lodash": "../vendor/jam/lodash/dist/lodash.underscore"
+    "lodash": "../vendor/jam/lodash/dist/lodash.underscore",
 
     // Put additional paths here.
+    "mustache": "../node_modules/mustache/mustache"
   },
 
   map: {
