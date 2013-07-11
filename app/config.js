@@ -10,7 +10,8 @@ require.config({
     "lodash": "../vendor/jam/lodash/dist/lodash.underscore",
 
     // Put additional paths here.
-    "mustache": "../node_modules/mustache/mustache"
+    "mustache": "../node_modules/mustache/mustache",
+    "backbone.subroute": "../vendor/git/backbone.subroute/backbone.subroute"
   },
 
   map: {
