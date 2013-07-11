@@ -17,7 +17,8 @@
     "url": "http://github.com/jesstelford/longdistance.git"
   },
   "dependencies": {
-    "mustache": "~0.7.2"
+    "mustache": "~0.7.2",
+    "stylus": "~0.33.1"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
