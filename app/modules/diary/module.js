@@ -6,8 +6,6 @@ define([
 
     var DiaryModule = App.module.extend({
 
-        Views: {},
-
         initialize: function() {
             this.Router = new DiaryRouter('diary')
         }
