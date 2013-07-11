@@ -16,6 +16,9 @@
     "type": "git",
     "url": "http://github.com/jesstelford/longdistance.git"
   },
+  "dependencies": {
+    "mustache": "~0.7.2"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-jshint": "~0.1.1",
