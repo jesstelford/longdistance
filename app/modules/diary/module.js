@@ -7,7 +7,7 @@ define([
     var DiaryModule = App.module.extend({
 
         initialize: function() {
-            this.Router = new DiaryRouter('diary')
+            this.Router = new DiaryRouter('diary', {createTrailingSlashRoutes: true});
         }
     });
 
