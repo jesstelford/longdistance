@@ -15,6 +15,7 @@ TODO
   * [RequireCSS](https://github.com/guybedford/require-css) for requiring CSS by a view
   * Watch .styl files and compile them to CSS
   * Generate source maps for compiled .styl / css
+   * :( Stylus [doesn't support source maps yet](https://github.com/LearnBoost/stylus/issues/1072)
   * Use [Bless](http://blesscss.com/) to ensure IE's selector limit isn't reached
   * Generate a sourcemap from Bless to the original compiled CSS
   * Automate all the above ([require-stylus](https://github.com/Se7enSky/require-stylus)?)

@@ -13,9 +13,11 @@ efficient code that will not bottleneck your users.
 
 ## Getting started ##
 
+    $ npm install -g stylus
     $ npm install
     $ git submodule init
     $ git submodule update
+    $ stylus -w -o css/ stylus/
 
 ## Documentation ##
 
