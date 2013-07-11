@@ -1,17 +1,20 @@
 define([
-  "backbone.layoutmanager"
+  "backbone",
+  "backbone.layoutmanager",
 
   // Include additional libraries installed with JamJS or placed in the
   // `vendor/js` directory, here.
 ],
 
-function(LayoutManager) {
+function(Backbone, LayoutManager) {
 
   // Provide a global location to place configuration settings and module
   // creation.
   var app = {
     // The root path to run the application.
-    root: "/"
+    root: "/",
+    // loaded modules
+    Modules: {}
   };
 
   // Localize or create a new JavaScript Template object.
@@ -43,12 +46,26 @@ function(LayoutManager) {
     }
   });
 
+  var Module = function(options) {
+    _.extend(this, options); // shallow copy the options onto this object
+    this.initialize.apply(this, arguments); // call the constructor
+  };
+
+  _.extend(Module.prototype, Backbone.Events, {
+    Views: {},
+    Collections: {},
+    Models: {},
+    Router: undefined,
+    initialize: function() {}
+  });
+
+  // Use Backbone's extend method
+  Module.extend = Backbone.View.extend;
+
   // Mix Backbone.Events, modules, and layout management into the app object.
   return _.extend(app, {
     // Create a custom object with a nested Views object.
-    module: function(additionalProps) {
-      return _.extend({ Views: {} }, additionalProps);
-    },
+    module: Module,
 
     // Helper for using layouts.
     useLayout: function(name, options) {
