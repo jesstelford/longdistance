@@ -8,7 +8,9 @@ define([
   var Router = Backbone.Router.extend({
     routes: {
       "": "index",
-      "diary(/*subRoute)": "diary" // diary module with handle sub routes
+      "diary(/*subRoute)": "diary", // diary module with handle sub routes
+
+      "*404": "404" // catch-all route
     },
 
     index: function() {
@@ -22,6 +24,8 @@ define([
         }
     },
 
+    "404": function() {
+        console.log("Main route 404");
     }
   });
 

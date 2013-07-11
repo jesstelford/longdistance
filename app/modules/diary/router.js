@@ -9,7 +9,9 @@ define([
 
         routes: {
             "": "home",
-            "foo": "foo"
+            "foo": "foo",
+
+            "*404": "404"
         },
 
         home: function() {
@@ -22,7 +24,12 @@ define([
 
         foo: function() {
             console.log("Diary Foo route");
+        },
+
+        "404": function() {
+            console.log("Diary route 404");
         }
+
 
     });
 
