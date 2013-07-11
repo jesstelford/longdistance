@@ -26,3 +26,6 @@ require.config({
   }
 
 });
+
+// Modernizr is loaded in the <head> tag, so define its module here
+window.Modernizr && define('modernizr', [], window.Modernizr);

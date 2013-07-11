@@ -21,6 +21,10 @@ var jam = {
             "main": "./dist/lodash.compat.js"
         },
         {
+            "name": "modernizr",
+            "location": "../vendor/jam/modernizr"
+        },
+        {
             "name": "underscore",
             "location": "../vendor/jam/underscore",
             "main": "underscore.js"
@@ -65,6 +69,10 @@ if (typeof require !== "undefined" && require.config) {
             "main": "./dist/lodash.compat.js"
         },
         {
+            "name": "modernizr",
+            "location": "../vendor/jam/modernizr"
+        },
+        {
             "name": "underscore",
             "location": "../vendor/jam/underscore",
             "main": "underscore.js"
@@ -106,6 +114,10 @@ else {
             "name": "lodash",
             "location": "../vendor/jam/lodash",
             "main": "./dist/lodash.compat.js"
+        },
+        {
+            "name": "modernizr",
+            "location": "../vendor/jam/modernizr"
         },
         {
             "name": "underscore",
