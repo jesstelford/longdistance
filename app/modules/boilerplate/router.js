@@ -8,12 +8,17 @@ define([
 
         routes: {
             "": "home",
+            "*404": "404" // catch-all route
         },
 
         home: function() {
             // var homeView = new HomeView();
             // var renderedView = homeView.render();
             // renderedView.$el.appendTo("body");
+        },
+
+        "404": function() {
+            console.error("Route 404");
         }
 
     });
