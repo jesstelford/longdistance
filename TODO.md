@@ -12,7 +12,8 @@ TODO
   1. RequireCSS for requiring CSS by a view
   1. Watch .styl files and compile them to CSS
   1. Generate source maps for compiled .styl / css
-  1. Use Bless to ensure IE's selector limit isn't reached
+  1. Use [Bless](http://blesscss.com/) to ensure IE's selector limit isn't reached
   1. Generate a sourcemap from Bless to the original compiled CSS
-  1. Automate all the above (require-stylus?)
+  1. Automate all the above ([require-stylus](https://github.com/Se7enSky/require-stylus)?)
+  1. One huge .css file with single HTTP request vs .css file per module?
 
