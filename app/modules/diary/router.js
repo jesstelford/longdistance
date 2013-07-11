@@ -1,7 +1,9 @@
 define([
     'backbone',
-    'modules/diary/diary',
-], function (Backbone, DiaryModule) {
+    'backbone.subroute',
+    'modules/diary/module',
+    'modules/diary/views/home',
+], function (Backbone, SubRoute, DiaryModule, HomeView) {
 
     var DiaryRouter = Backbone.SubRoute.extend({
 
@@ -11,7 +13,7 @@ define([
         },
 
         home: function() {
-            var diaryHome = new DiaryModule.Views.Home();
+            var diaryHome = new HomeView();
             var renderedView = diaryHome.render();
             renderedView.$el.appendTo("body");
 

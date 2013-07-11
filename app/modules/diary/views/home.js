@@ -1,9 +1,8 @@
 define([
-    'backbone',
-    'modules/diary/diary'
-], function (Backbone, DiaryModule) {
+    'backbone'
+], function (Backbone) {
 
-    DiaryModule.Views.Home = Backbone.View.extend({
+    var HomeView = Backbone.View.extend({
 
         template: 'diary/home',
         
@@ -14,5 +13,5 @@ define([
     });
 
     // return the module
-    return DiaryModule.Views.Home;
+    return HomeView;
 });
