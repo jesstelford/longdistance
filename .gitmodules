@@ -1,0 +1,3 @@
+[submodule "vendor/git/backbone.subroute"]
+	path = vendor/git/backbone.subroute
+	url = git@github.com:ModelN/backbone.subroute.git
