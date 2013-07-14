@@ -19,6 +19,7 @@ efficient code that will not bottleneck your users.
     $ git submodule init
     $ git submodule update
     $ stylus -w -o css/ stylus/
+    $ grip # render .md files to http://localhost:5000/README.md
 ```
 
 ## Technologies used ##
