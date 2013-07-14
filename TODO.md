@@ -11,9 +11,11 @@ TODO
  1. Move 404 page to a backbone view? What about people that don't have JS enabled?
  1. Default page view while app is (down)loading.
   * Would this require CSS to be in the head before the page is loaded?
+ 1. Partial Mustache views? Layout manager? Or custom solution?
  1. CSS / Stylus
   * [RequireCSS](https://github.com/guybedford/require-css) for requiring CSS by a view
-  * Watch .styl files and compile them to CSS
+  * ~~Watch .styl files and compile them to CSS~~
+   * `$ stylus -w -o css/ stylus/`
   * Generate source maps for compiled .styl / css
    * :( Stylus [doesn't support source maps yet](https://github.com/LearnBoost/stylus/issues/1072)
   * Use [Bless](http://blesscss.com/) to ensure IE's selector limit isn't reached
@@ -21,4 +23,5 @@ TODO
   * Automate all the above ([require-stylus](https://github.com/Se7enSky/require-stylus)?)
   * One huge .css file with single HTTP request vs .css file per module?
   * Use [nib](http://visionmedia.github.io/nib/) as a library of stylus mixins
+  * Use [Ganam Style](http://lab.lepture.com/ganam-cli/) to generate style guide from comments in .styl files
 

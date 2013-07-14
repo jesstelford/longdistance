@@ -13,11 +13,22 @@ efficient code that will not bottleneck your users.
 
 ## Getting started ##
 
+```bash
     $ npm install -g stylus
     $ npm install
     $ git submodule init
     $ git submodule update
     $ stylus -w -o css/ stylus/
+```
+
+## Technologies used ##
+
+ * Backbone.js
+ * Backbone Boilerplate
+ * Backbone LayoutManager
+ * RequireJS (AMD JS module loading)
+ * Stylus (compiled to CSS)
+ * Mustache (template format)
 
 ## Documentation ##
 
